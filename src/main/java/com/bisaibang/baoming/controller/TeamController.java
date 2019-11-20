@@ -8,7 +8,6 @@ import com.bisaibang.baoming.service.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.lang.reflect.Array;
@@ -36,7 +35,7 @@ public class TeamController {
         member3.setIdentity("替补队员");
         members.add(member1);
         members.add(member2);
-
+        members.add(member3);
         teamService.insertInfo(team,members);
 
 
