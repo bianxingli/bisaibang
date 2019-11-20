@@ -37,8 +37,6 @@ public class TeamController {
         members.add(member2);
         members.add(member3);
         teamService.insertInfo(team,members);
-
-
     }
 
 
@@ -49,6 +47,8 @@ public class TeamController {
 //        List<Member> members = teamVo.getMembers();
 //        teamService.insertInfo(team,members);
 //    }
+
+
     @RequestMapping("/baoming")
     public void baoMing(@RequestBody List<Member> members,Team team){
         System.out.println("请求");
